@@ -23,21 +23,25 @@ Po aktivaci virtuálního prostředí nainstaluj požadované knihovny:
 pip install -r requirements.txt
 který je součástí filu Project_3_webscraping
 
-Spuštění skriptu
+Spuštění skriptu souboru 
 Jak získat odkaz na územní celek?
 1.	Otevřete webovou stránku volby.cz.
 2.	Klikněte na křížek „X“ ve sloupci "Výběr obce" pro požadovaný územní celek.
 3.	Zkopírujte URL adresu z adresního řádku prohlížeče.
-Spuštění skriptu s argumenty:
-python main.py --url "URL_ADRESA_UZEMNIHO_CELKU" --output "NAZEV_VYSTUPNIHO_SOUBORU.csv"
+Spuštění skriptu s argumenty ve správném pořadí:
+1. argument: URL_ADRESA_UZEMNIHO_CELKU
+2. argunet: NAZEV_VYSTUPNIHO_SOUBORU.csv
+final: python main.py --url "URL_ADRESA_UZEMNIHO_CELKU" --output "NAZEV_VYSTUPNIHO_SOUBORU.csv"
 
-Příklad pro Prostějov:
+Konkrétní příklad pro územní celek Prostějov:
 python main.py --url "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103" --output "vysledky_prostejov.csv"
+
 Pokud nejsou zadány argumenty správně
 •	Skript upozorní uživatele a nepokračuje v běhu.
 •	Uživatel musí zadat oba argumenty ve správném pořadí.
 
 Práce s výsledky
+Scrapovaná data jssou uložena do CSV souboru
 Otevření CSV souboru
 •	VS Code: Otevřete soubor a použijte rozšíření „Excel Viewer“.
 •	Excel: Pokud CSV otevřete přímo v Excelu mohou se zobrazit špatné znaky.
