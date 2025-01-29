@@ -29,7 +29,8 @@ který je součástí filu Project_3_webscraping
 **Spuštění skriptu s argumenty ve správném pořadí:**
 1. argument: URL_ADRESA_UZEMNIHO_CELKU
 2. argunet: NAZEV_VYSTUPNIHO_SOUBORU.csv
-final: python webscaper.py --url "URL_ADRESA_UZEMNIHO_CELKU" --output "NAZEV_VYSTUPNIHO_SOUBORU.csv"
+
+finaální ukázka: python NAZEV_SOUBORU.py --url "URL_ADRESA_UZEMNIHO_CELKU" --output "NAZEV_VYSTUPNIHO_SOUBORU.csv"
 
 **Konkrétní příklad pro územní celek Prostějov:**
 python webscaper.py --url "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103" --output "vysledky_prostejov.csv"
