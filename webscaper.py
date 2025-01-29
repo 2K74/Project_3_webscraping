@@ -90,3 +90,4 @@ if __name__ == "__main__":
 
     print(f"Data byla úspěšně uložena do souboru {output_path}!")
     
+
