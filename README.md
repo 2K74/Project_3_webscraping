@@ -31,10 +31,10 @@ Jak získat odkaz na územní celek?
 Spuštění skriptu s argumenty ve správném pořadí:
 1. argument: URL_ADRESA_UZEMNIHO_CELKU
 2. argunet: NAZEV_VYSTUPNIHO_SOUBORU.csv
-final: python main.py --url "URL_ADRESA_UZEMNIHO_CELKU" --output "NAZEV_VYSTUPNIHO_SOUBORU.csv"
+final: python webscaper.py --url "URL_ADRESA_UZEMNIHO_CELKU" --output "NAZEV_VYSTUPNIHO_SOUBORU.csv"
 
 Konkrétní příklad pro územní celek Prostějov:
-python main.py --url "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103" --output "vysledky_prostejov.csv"
+python webscaper.py --url "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103" --output "vysledky_prostejov.csv"
 
 Pokud nejsou zadány argumenty správně
 •	Skript upozorní uživatele a nepokračuje v běhu.
